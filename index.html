@@ -1,483 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Festus Odiley | Senior Project Manager – Enterprise Transformation</title>
-  <meta name="description" content="PMP-certified Senior Project Manager delivering enterprise transformation, governance, and cloud/data-enabled programs across Canada." />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Festus Odiley | Senior Project Manager</title>
 
-  <style>
-    :root{
-      --bg:#f4f6f9;
-      --card:#ffffff;
-      --text:#1f2937;
-      --muted:#4b5563;
-      --accent:#0a4b8c;
-      --border:#e5e7eb;
-      --shadow: 0 10px 25px rgba(0,0,0,0.06);
-      --radius: 14px;
-    }
+<style>
 
-    *{ box-sizing: border-box; }
-    body{
-      margin:0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
+body{
+font-family: Arial, Helvetica, sans-serif;
+margin:0;
+background:#f4f6f9;
+color:#222;
+}
 
-    a{ color: var(--accent); text-decoration: none; }
-    a:hover{ text-decoration: underline; }
+.container{
+max-width:1000px;
+margin:auto;
+padding:40px 20px;
+}
 
-    .wrap{
-      max-width: 980px;
-      margin: 44px auto 80px;
-      padding: 0 18px;
-    }
+header{
+background:#0a4b8c;
+color:white;
+padding:40px 20px;
+border-radius:10px;
+}
 
-    /* Top header */
-    .hero{
-      background: linear-gradient(135deg, rgba(10,75,140,0.08), rgba(10,75,140,0.02));
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      padding: 26px 22px;
-    }
+header h1{
+margin:0;
+font-size:40px;
+}
 
-    .hero h1{
-      margin: 0 0 6px;
-      font-size: 40px;
-      letter-spacing: -0.5px;
-    }
+header p{
+margin-top:8px;
+font-size:16px;
+}
 
-    .headline{
-      margin: 0 0 10px;
-      color: var(--muted);
-      font-size: 16px;
-    }
+.buttons{
+margin-top:20px;
+}
 
-    .location{
-      margin: 0 0 2px;
-      color: var(--muted);
-      font-size: 14px;
-    }
+.buttons a{
+display:inline-block;
+padding:10px 16px;
+margin-right:10px;
+border-radius:6px;
+text-decoration:none;
+background:white;
+color:#0a4b8c;
+font-weight:bold;
+}
 
-    .badges{
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 12px;
-    }
-    .badge{
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 7px 10px;
-      border: 1px solid var(--border);
-      background: rgba(255,255,255,0.75);
-      border-radius: 999px;
-      font-size: 13px;
-      color: var(--muted);
-      white-space: nowrap;
-    }
-    .dot{
-      width: 8px; height: 8px; border-radius: 50%;
-      background: var(--accent);
-      display: inline-block;
-    }
+section{
+margin-top:40px;
+}
 
-    .cta{
-      display:flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 18px;
-    }
-    .btn{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      padding: 10px 14px;
-      border-radius: 10px;
-      border: 1px solid var(--border);
-      background: var(--card);
-      box-shadow: 0 6px 14px rgba(0,0,0,0.05);
-      font-weight: 600;
-      font-size: 14px;
-    }
-    .btn.primary{
-      border-color: rgba(10,75,140,0.35);
-      background: rgba(10,75,140,0.10);
-    }
+h2{
+border-left:4px solid #0a4b8c;
+padding-left:10px;
+}
 
-    /* Nav */
-    .nav{
-      margin-top: 18px;
-      display:flex;
-      flex-wrap:wrap;
-      gap: 10px;
-    }
-    .nav a{
-      font-size: 13px;
-      color: var(--muted);
-      border: 1px solid var(--border);
-      background: rgba(255,255,255,0.8);
-      padding: 7px 10px;
-      border-radius: 999px;
-      text-decoration: none;
-    }
-    .nav a:hover{ color: var(--accent); border-color: rgba(10,75,140,0.35); }
+.card{
+background:white;
+padding:20px;
+margin-top:15px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.05);
+}
 
-    /* Sections */
-    section{
-      margin-top: 28px;
-    }
-    h2{
-      margin: 0 0 10px;
-      font-size: 20px;
-      border-left: 4px solid var(--accent);
-      padding-left: 10px;
-    }
-    .sub{
-      margin: 0 0 12px;
-      color: var(--muted);
-      font-size: 14px;
-    }
+.skills span{
+display:inline-block;
+background:#eef2f7;
+padding:6px 10px;
+border-radius:6px;
+margin:5px;
+font-size:13px;
+}
 
-    .grid{
-      display:grid;
-      grid-template-columns: repeat(12, 1fr);
-      gap: 14px;
-    }
-    .card{
-      grid-column: span 12;
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      padding: 16px 16px 14px;
-    }
-    @media (min-width: 760px){
-      .card.half{ grid-column: span 6; }
-      .card.third{ grid-column: span 4; }
-    }
+footer{
+margin-top:40px;
+text-align:center;
+color:#666;
+font-size:14px;
+}
 
-    .card h3{
-      margin: 0 0 6px;
-      font-size: 16px;
-    }
-    .meta{
-      margin: 0 0 10px;
-      color: var(--muted);
-      font-size: 13px;
-    }
-    ul{
-      margin: 8px 0 0;
-      padding-left: 18px;
-    }
-    li{ margin: 6px 0; }
+</style>
 
-    .pillrow{
-      display:flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 10px;
-    }
-    .pill{
-      font-size: 12px;
-      color: var(--muted);
-      border: 1px solid var(--border);
-      background: #fafafa;
-      padding: 6px 8px;
-      border-radius: 999px;
-    }
-
-    .footer{
-      margin-top: 34px;
-      color: var(--muted);
-      font-size: 13px;
-      text-align: center;
-    }
-
-    .kpi{
-      display:flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 10px;
-    }
-    .kpi .pill{
-      background: rgba(10,75,140,0.08);
-      border-color: rgba(10,75,140,0.20);
-      color: #2c3e50;
-    }
-
-    .small{
-      font-size: 12px;
-      color: var(--muted);
-    }
-  </style>
 </head>
 
 <body>
-  <main class="wrap">
-    <!-- HERO -->
-    <header class="hero">
-      <h1>Festus Odiley</h1>
-      <p class="headline">
-        Senior Project Manager | Enterprise Transformation | Governance & Delivery Leadership
-      </p>
-      <p class="location">
-        Based in Toronto • Open to roles across Canada (hybrid/onsite/remote depending on role)
-      </p>
 
-      <div class="badges">
-        <span class="badge"><span class="dot"></span>PMP</span>
-        <span class="badge"><span class="dot"></span>SAFe Release Train Engineer (RTE)</span>
-        <span class="badge"><span class="dot"></span>Hybrid Agile / Waterfall</span>
-        <span class="badge"><span class="dot"></span>Regulated Environments</span>
-        <span class="badge"><span class="dot"></span>Cloud & Data-Enabled Programs</span>
-      </div>
+<div class="container">
 
-      <div class="cta">
-        <a class="btn primary" href="#projects">View Portfolio</a>
-        <a class="btn" href="https://www.linkedin.com/in/festus-o-bb615926/" target="_blank" rel="noreferrer">LinkedIn Profile</a>
-        <a class="btn" href="mailto:festusodiley@aol.com">Email</a>
-      </div>
+<header>
 
-      <nav class="nav" aria-label="Section navigation">
-        <a href="#overview">Overview</a>
-        <a href="#projects">Transformation Projects</a>
-        <a href="#cloud-data">Cloud & Data Delivery</a>
-        <a href="#governance">Governance & Controls</a>
-        <a href="#leadership">Leadership</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+<h1>Festus Odiley</h1>
 
-    <!-- OVERVIEW -->
-    <section id="overview">
-      <h2>Executive Overview</h2>
-      <p class="sub">
-        I lead complex, cross-functional programs that sit at the intersection of business, technology, governance, and change.
-        My strength is turning ambiguity into an executable plan, aligning stakeholders, and delivering measurable outcomes.
-      </p>
+<p>
+Senior Project Manager | Enterprise Transformation | Cloud & Digital Delivery
+</p>
 
-      <div class="grid">
-        <div class="card half">
-          <h3>What I deliver</h3>
-          <ul>
-            <li>End-to-end project lifecycle delivery: scope, schedule, budget, RAID, reporting, close-out</li>
-            <li>Integrated plans across product, engineering, data, security/privacy, and operations</li>
-            <li>Executive reporting: steering committee updates, decision logs, dashboards, milestone readiness</li>
-            <li>Delivery in regulated contexts with governance, audit readiness, and stage-gate approvals</li>
-          </ul>
-        </div>
+<p>
+Toronto, Canada — Open to opportunities across Canada
+</p>
 
-        <div class="card half">
-          <h3>Where I add the most value</h3>
-          <ul>
-            <li>Digital modernization and platform transformation</li>
-            <li>Enterprise SaaS and cloud-enabled rollouts (implementation + adoption)</li>
-            <li>Data platform modernization (delivery coordination, operating model, controls)</li>
-            <li>Complex stakeholder environments (public sector, enterprise programs, multi-vendor)</li>
-          </ul>
+<div class="buttons">
 
-          <div class="kpi">
-            <span class="pill">12+ years delivery leadership</span>
-            <span class="pill">Multi-workstream programs</span>
-            <span class="pill">Governance & risk controls</span>
-          </div>
-        </div>
-      </div>
-    </section>
+<a href="https://www.linkedin.com/in/festus-o-bb615926/" target="_blank">
+LinkedIn
+</a>
 
-    <!-- PROJECTS -->
-    <section id="projects">
-      <h2>Enterprise Transformation Projects</h2>
-      <p class="sub">Representative initiatives (sanitized). Details available upon request.</p>
+<a href="/assets/Festus_Odiley_Enterprise_Project_Manager_Optimized.pdf" target="_blank">
+Download Resume
+</a>
 
-      <div class="grid">
-        <article class="card half">
-          <h3>Regulatory Digital Modernization Program</h3>
-          <p class="meta">Role: Senior Project Manager / Program Delivery Lead | Domain: Public Sector</p>
-          <ul>
-            <li>Coordinated cross-functional delivery across business, architecture, engineering, QA, data, and operations</li>
-            <li>Built integrated plans, milestone gates, and executive reporting aligned to governance controls</li>
-            <li>Owned RAID management and dependency resolution across multiple delivery streams</li>
-          </ul>
-          <div class="pillrow">
-            <span class="pill">Integrated plan</span>
-            <span class="pill">RAID</span>
-            <span class="pill">Steering committee</span>
-            <span class="pill">Regulated delivery</span>
-          </div>
-        </article>
+<a href="mailto:festusodiley@aol.com">
+Email
+</a>
 
-        <article class="card half">
-          <h3>Cybersecurity Risk Remediation & Compliance</h3>
-          <p class="meta">Role: Project/Program Lead | Domain: Governance, Risk & Compliance</p>
-          <ul>
-            <li>Coordinated delivery gates across security, privacy, legal, and engineering stakeholders</li>
-            <li>Established reporting cadence, action tracking, and governance artifacts for risk treatment</li>
-            <li>Supported executive readiness for audits, compliance reviews, and remediation milestones</li>
-          </ul>
-          <div class="pillrow">
-            <span class="pill">Security/privacy gates</span>
-            <span class="pill">Risk treatment</span>
-            <span class="pill">Controls & reporting</span>
-          </div>
-        </article>
+</div>
 
-        <article class="card half">
-          <h3>Enterprise SaaS Platform Modernization</h3>
-          <p class="meta">Role: IT Project Manager | Domain: Private Sector</p>
-          <ul>
-            <li>Managed parallel workstreams: implementation, integrations, testing, and release readiness</li>
-            <li>Aligned business and technical stakeholders on scope, sequencing, and operational handoff</li>
-            <li>Tracked delivery performance, risks, and resourcing while maintaining executive visibility</li>
-          </ul>
-          <div class="pillrow">
-            <span class="pill">SaaS rollout</span>
-            <span class="pill">Integrations</span>
-            <span class="pill">Release readiness</span>
-          </div>
-        </article>
+</header>
 
-        <article class="card half">
-          <h3>Healthcare Digitization (EMR Modernization)</h3>
-          <p class="meta">Role: Project Manager | Domain: Healthcare Delivery</p>
-          <ul>
-            <li>Led requirements, UAT coordination, deployment readiness, and stabilization planning</li>
-            <li>Coordinated clinical and technical stakeholders with clear decisions and escalation paths</li>
-            <li>Managed risks, issues, and delivery milestones under demanding timelines</li>
-          </ul>
-          <div class="pillrow">
-            <span class="pill">Requirements & UAT</span>
-            <span class="pill">Change readiness</span>
-            <span class="pill">Operational handoff</span>
-          </div>
-        </article>
-      </div>
-    </section>
+<section>
 
-    <!-- CLOUD & DATA -->
-    <section id="cloud-data">
-      <h2>Cloud & Data Delivery</h2>
-      <p class="sub">
-        I lead delivery for cloud-enabled and data modernization programs by coordinating prerequisites, delivery gates, and operational readiness across teams.
-      </p>
+<h2>Executive Overview</h2>
 
-      <div class="grid">
-        <div class="card third">
-          <h3>Cloud-enabled delivery coordination</h3>
-          <ul>
-            <li>Environment readiness & access patterns</li>
-            <li>Security/privacy/compliance gates</li>
-            <li>Release and cutover planning</li>
-          </ul>
-        </div>
+<div class="card">
 
-        <div class="card third">
-          <h3>Data modernization programs</h3>
-          <ul>
-            <li>Cross-team dependency management</li>
-            <li>Data quality & validation planning</li>
-            <li>Operating model and handoffs</li>
-          </ul>
-        </div>
+<p>
+PMP-certified Senior Project Manager with 10+ years of experience delivering enterprise digital transformation and modernization initiatives across government, healthcare, and private sector organizations.
+</p>
 
-        <div class="card third">
-          <h3>Enterprise SaaS rollouts</h3>
-          <ul>
-            <li>Licensing & onboarding approach</li>
-            <li>Training, comms, adoption measurement</li>
-            <li>Support model and readiness</li>
-          </ul>
-        </div>
-      </div>
+<p>
+Experienced leading complex programs involving cloud platforms, enterprise data systems, cybersecurity initiatives, and cross-functional technology teams.
+</p>
 
-      <p class="small">
-        This section demonstrates delivery leadership and technical fluency without implying hands-on engineering responsibilities.
-      </p>
-    </section>
+<p>
+Strong background managing full project lifecycles including business case development, governance approvals, delivery oversight, and executive stakeholder engagement within regulated enterprise environments.
+</p>
 
-    <!-- GOVERNANCE -->
-    <section id="governance">
-      <h2>Governance & Delivery Controls</h2>
-      <p class="sub">
-        I work comfortably within structured PMO environments, using governance to improve predictability, decision-making, and delivery confidence.
-      </p>
+</div>
 
-      <div class="grid">
-        <div class="card half">
-          <h3>Program governance</h3>
-          <ul>
-            <li>Business cases, charters, integrated plans, and stage-gate readiness</li>
-            <li>Steering committee reporting, decision logs, and executive briefings</li>
-            <li>Milestone controls and quality checkpoints</li>
-          </ul>
-        </div>
+</section>
 
-        <div class="card half">
-          <h3>Risk / Issues / Dependencies</h3>
-          <ul>
-            <li>RAID management with proactive mitigation and escalation</li>
-            <li>Cross-team dependency tracking and resolution planning</li>
-            <li>Release readiness criteria and operational handoffs</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+<section>
 
-    <!-- LEADERSHIP -->
-    <section id="leadership">
-      <h2>Leadership & Stakeholder Management</h2>
-      <p class="sub">
-        My leadership style is pragmatic and outcomes-focused: clarify the goal, align the people, manage the risk, and deliver.
-      </p>
+<h2>Core Competencies</h2>
 
-      <div class="grid">
-        <div class="card half">
-          <h3>How I work</h3>
-          <ul>
-            <li>Translate business needs into an executable delivery plan</li>
-            <li>Challenge assumptions constructively to reduce risk and rework</li>
-            <li>Tailor communications: detailed for teams, concise for executives</li>
-          </ul>
-        </div>
+<div class="card skills">
 
-        <div class="card half">
-          <h3>Collaboration model</h3>
-          <ul>
-            <li>Business + Product + Engineering alignment</li>
-            <li>Security/privacy/compliance partnership for delivery gates</li>
-            <li>Vendor coordination and accountability</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+<span>Enterprise Program Delivery</span>
+<span>Digital Transformation</span>
+<span>Cloud Transformation</span>
+<span>SaaS Platforms</span>
+<span>Enterprise PMO Governance</span>
+<span>Agile & Waterfall Delivery</span>
+<span>RAID Management</span>
+<span>Stakeholder Engagement</span>
+<span>Program Financial Oversight</span>
+<span>Technology Roadmaps</span>
 
-    <!-- CONTACT -->
-    <section id="contact">
-      <h2>Contact</h2>
-      <p class="sub">Open to senior project/program delivery roles across Canada (hybrid/onsite/remote depending on role).</p>
+</div>
 
-      <div class="grid">
-        <div class="card">
-          <p><strong>Email:</strong> <a href="mailto:festusodiley@aol.com">festusodiley@aol.com</a></p>
-          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/festus-o-bb615926/" target="_blank" rel="noreferrer">linkedin.com/in/festus-o-bb615926</a></p>
-          <p class="small">
-            Tip: Add a PDF resume to your repo (e.g., <code>/assets/Festus_Odiley_Resume.pdf</code>) and link it from the top buttons for faster recruiter access.
-          </p>
-        </div>
-      </div>
-    </section>
+</section>
 
-    <p class="footer">© <span id="y"></span> Festus Odiley • Built on GitHub Pages</p>
-  </main>
+<section>
 
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
+<h2>Enterprise Transformation Projects</h2>
+
+<div class="card">
+
+<h3>Government of British Columbia – Digital Services Modernization</h3>
+
+<p>
+Led enterprise digital modernization initiatives supporting regulatory platforms and cross-government digital services.
+</p>
+
+<ul>
+<li>Managed full project lifecycle delivery and governance approvals</li>
+<li>Coordinated cross-functional teams across architecture, engineering, data and operations</li>
+<li>Produced executive reporting and program dashboards</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>Enterprise Cybersecurity Governance Program</h3>
+
+<p>
+Directed cybersecurity risk remediation initiatives aligned with enterprise governance and compliance frameworks.
+</p>
+
+<ul>
+<li>Coordinated stakeholders across cybersecurity, privacy, legal and engineering teams</li>
+<li>Implemented structured risk tracking and governance reporting</li>
+<li>Supported executive leadership reporting and remediation planning</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>Enterprise SaaS Platform Transformation</h3>
+
+<p>
+Managed enterprise technology initiatives including SaaS platform integrations and digital modernization programs.
+</p>
+
+<ul>
+<li>Led planning, delivery milestones and vendor coordination</li>
+<li>Facilitated cross-team collaboration across product, engineering and operations</li>
+<li>Delivered executive status reporting and risk updates</li>
+</ul>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Technology & Delivery Tools</h2>
+
+<div class="card skills">
+
+<span>Azure DevOps</span>
+<span>Jira</span>
+<span>Confluence</span>
+<span>Microsoft Project</span>
+<span>SharePoint</span>
+<span>Power BI</span>
+<span>Cloud Platforms (Azure / AWS)</span>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Certifications</h2>
+
+<div class="card">
+
+<ul>
+<li>Project Management Professional (PMP)</li>
+<li>SAFe Release Train Engineer (RTE)</li>
+<li>Advanced Certified ScrumMaster (A-CSM)</li>
+<li>Certified ScrumMaster (CSM)</li>
+<li>Professional Scrum Master (PSM)</li>
+</ul>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Contact</h2>
+
+<div class="card">
+
+<p>Email: festusodiley@aol.com</p>
+
+<p>
+LinkedIn:
+<a href="https://www.linkedin.com/in/festus-o-bb615926/" target="_blank">
+linkedin.com/in/festus-o-bb615926
+</a>
+</p>
+
+<p>
+Portfolio:
+<a href="https://fodiley.github.io" target="_blank">
+fodiley.github.io
+</a>
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Festus Odiley | Enterprise Project Manager Portfolio</p>
+
+</footer>
+
+</div>
+
 </body>
 </html>
